@@ -1,0 +1,58 @@
+.tags {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: #fff;
+}
+.tags .tag {
+    padding: 5px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.tags .tag > a {
+    padding: 5px;
+    text-decoration: none;
+}
+.tags .tag > a:hover {
+    font-weight: bold;
+}
+.tags .input-area {
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+}
+.tags .input-area input {
+    border: none;
+    display: block;
+    width: auto;
+}
+
+.tags .input-area input:focus {
+    box-shadow: none;
+    outline: 0;
+}
+
+.tags .input-area .list-box {
+    position: absolute;
+    max-width: 150%;
+    background: #fff;
+    box-shadow: 0px 2px 4px #ecebea;
+    border: 1px solid #ecebea;
+}
+
+.tags .input-area .list-box > div {
+    padding: 5px 15px;
+    border-bottom: 1px solid #ecebea;
+    cursor: pointer;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.tags .input-area .list-box > div:hover,
+.tags .input-area .list-box > div.active {
+    font-weight: bold;
+    background-color: #ecebea;
+}
